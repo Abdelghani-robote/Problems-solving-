@@ -1,0 +1,21 @@
+#include <string>
+
+std::string removeExclamationMarks(std::string str){
+  std::string empty = "";
+  
+  for (int i = 0 ; i < str.length() ; i++ ){
+  
+    if(str [i] == '!')
+    {
+      continue ; 
+    }
+    
+    else{
+    
+      empty += str[i];
+    
+    }
+  
+  }
+  return empty ;
+}
