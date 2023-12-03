@@ -1,0 +1,20 @@
+int  fact (int s){
+ if (s<0){
+   throw ArgumentError.value(s);
+ }
+  
+ if (s==0){
+   return 1 ; 
+ } 
+ 
+ var result = s ; 
+  s--;
+  while(s > 1){
+    result *= s ;
+    s--;
+  }
+  return result ; 
+}
+void main() {
+  print('the result is : ${fact(4)}');
+}
