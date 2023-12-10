@@ -1,0 +1,23 @@
+class Person {
+  String name;
+  int age ;
+  
+  Person(this.name, this.age);
+  
+  @override
+    String toString() => 'Name: $name , Age: $age';
+}
+
+void main() {
+ List <Person> people = [] ;
+  
+  people.add(Person('abdelghani' , 20));
+  people.add(Person('saad' , 21));
+  people.add(Person('yacine' , 22));
+  
+  for(Person person in people ){
+    print(person);
+  }
+
+}
+
